@@ -14,6 +14,7 @@ app.use(cors());
 app.use(helmet());
 
 app.use('/api/users', require('./routes/userRoutes')); // Example route
+app.use('/api/blogs', require('./routes/blogRoutes'))
 
 const PORT = process.env.PORT || 5000;
 
